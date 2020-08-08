@@ -830,6 +830,7 @@ section:nth-of-type(4) .text {
   font-size: 9pt;
   line-height: 13pt;
   max-height: 85px;
+  text-align: justify;
 }
 section:nth-of-type(5) {
   background: #252934;
@@ -1038,6 +1039,7 @@ footer .footnote .highlight {
     font-size: 11pt;
     line-height: 18pt;
     margin-top: 15px;
+    text-align: justify;
   }
   .modal-wrap .close {
     right: 25px;
