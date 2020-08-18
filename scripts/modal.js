@@ -50,12 +50,12 @@ $(document).ready(function() {
         'A node.js web-application where the user can search the weather forecast. It makes http calls to Open Weather Map API and renders the result on the screen. The back-end is written in Node.js and the front-end is rendered by a simplistic HTML / CSS.',
       link: 'https://petros-weather-app.herokuapp.com/'
     },
-    never: {
-      title: 'Task Manager Application',
-      tag: 'NODE-JS APPLICATION.',
+    spotify: {
+      title: 'Spotify clone app',
+      tag: 'PHP APPLICATION.',
       detail:
-        'A node.js Task Manager Rest API. It uses user authentication with email / password, supports Email notification and database datastorage file-upload in MongoDB.',
-      link: 'https://github.com/petrostrak/Task-Manager-App',
+        'A Spotify-like web application for music streaming, using registretion, search for all artists / albums / songs, create and customize own playlists and control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. This web application is built with HTML, CSS, PHP, JQuery, JavaScript and MySQL.',
+      link: 'https://github.com/petrostrak/Spotify',
     }
   };
 
