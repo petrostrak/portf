@@ -27,7 +27,7 @@ $(document).ready(function() {
       tag: 'SPRINGBOOT APPLICATION.',
       detail:
         'AirSense is an air quality IoT sensors e-shop and data visualization service and my first collaborate work with Agile (SCRUM) methodology. It is structured with REST API architecture. The back-end is set up with Spring Boot, JPA and Hibernate while the front-end with React-js, Bootstrap and CSS. The application implements chat using Websockets, Paypal transactions and SMTP Mail service. Last but not least, a python script generates dummy data and store them to MySQL and Grafana analyse and visualize them on the application.',
-      link: 'https://github.com/petrostrak/airSense'
+      link: 'http://173.249.63.213:88'
     },
     walker: {
       title: 'Silver Spoon Application',
@@ -56,6 +56,13 @@ $(document).ready(function() {
       detail:
         'A Spotify-like web application for music streaming, using registretion, search for all artists / albums / songs, create and customize own playlists and control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. This web application is built with HTML, CSS, PHP, JQuery, JavaScript and MySQL.',
       link: 'https://github.com/petrostrak/Spotify',
+    },
+    never: {
+      title: 'Task Manager Application',
+      tag: 'NODE-JS APPLICATION.',
+      detail:
+        'A node.js Task Manager Rest API. It implements user authentication with email/ password, supports email notification and database datastorage file-upload in MongoDB.',
+      link: 'https://github.com/petrostrak/Task-Manager-App',
     }
   };
 
