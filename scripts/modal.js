@@ -63,6 +63,13 @@ $(document).ready(function() {
       detail:
         'A node.js Task Manager Rest API. It implements user authentication with email/ password, supports email notification and database datastorage file-upload in MongoDB.',
       link: 'https://github.com/petrostrak/Task-Manager-App',
+    },
+    springChat: {
+      title: 'Chat Application',
+      tag: 'SPRINGBOOT CHAT APPLICATION',
+      detail:
+        'This is Spring Boot WebSocket Chat Application with SockJS fallback and STOMP protocol. This is a sample project to demonstrate building and deploying a simple Spring Boot based microservice and a web app to consume the microservice.',
+      link: 'https://github.com/petrostrak/Chatapp',
     }
   };
 
