@@ -749,6 +749,9 @@ section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
 section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
   background: url("../img/thumb-10.jpg") center center/cover;
 }
+section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
+  background: url("../img/thumb-11.jpg") center center/cover;
+}
 section:nth-of-type(3) #gallery .mix .card {
   height: 240px;
   max-width: 100%;

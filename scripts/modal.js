@@ -66,10 +66,17 @@ $(document).ready(function() {
     },
     springChat: {
       title: 'Chat Application',
-      tag: 'SPRINGBOOT CHAT APPLICATION',
+      tag: 'SPRINGBOOT CHAT APPLICATION.',
       detail:
         'This is Spring Boot WebSocket Chat Application with SockJS fallback and STOMP protocol. This is a sample project to demonstrate building and deploying a simple Spring Boot based microservice and a web app to consume the microservice.',
       link: 'https://github.com/petrostrak/Chatapp',
+    },
+    devConnect: {
+      title: 'DevConnect',
+      tag: 'NODE-JS APPLICATION.',
+      detail:
+        'This is a full stack social network application with React, Redux, Node, Express & MongoDB. It uses Stateless JWT authentication practices, Redux for state management and is created with an extensive backend API with Express.',
+      link: 'https://petrosconnect.herokuapp.com/',
     }
   };
 
