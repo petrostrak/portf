@@ -77,6 +77,13 @@ $(document).ready(function() {
       detail:
         'This is a full stack social network application with React, Redux, Node, Express & MongoDB. It uses Stateless JWT authentication practices, Redux for state management and is created with an extensive backend API with Express.',
       link: 'https://petrosconnect.herokuapp.com/',
+    },
+    springAngular: {
+      title: 'Spring Boot Crud',
+      tag: 'SPRINGBOOT CRUD APPLICATION.',
+      detail:
+        'In this web application, I developed a CRUD (Create, Read, Update, Delete) Web Application (employee management system) using Angular 9 as a front-end and Spring boot 2 restful API as a backend.',
+      link: 'https://github.com/petrostrak/Spring-Boot-and-Angular-9-CRUD-Tutorial',
     }
   };
 
