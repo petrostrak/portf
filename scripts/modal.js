@@ -84,6 +84,13 @@ $(document).ready(function() {
       detail:
         'In this web application, I developed a CRUD (Create, Read, Update, Delete) Web Application (employee management system) using Angular 9 as a front-end and Spring boot 2 restful API as a backend.',
       link: 'https://github.com/petrostrak/Spring-Boot-and-Angular-9-CRUD-Tutorial',
+    },
+    nestjs: {
+      title: 'Nest.JS Task Management',
+      tag: 'NEST-JS TASK MANAGEMENT APPLICATION.',
+      detail:
+        'This is a task management web application written with NestJS, a Node.js back-end development framework built upon Express, leveraging the power of TypeScript . It implements REST APIs performing CRUD operations, Authentication and Authorization with JWT, uses TypeORM for PostgreSQL interaction and is deployed to Amazon Web Services (s3, elastic beanstalk).',
+      link: 'http://task-management-with-nest-js.s3-website.eu-central-1.amazonaws.com',
     }
   };
 
