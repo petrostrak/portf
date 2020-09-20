@@ -27,7 +27,7 @@ $(document).ready(function() {
       tag: 'SPRINGBOOT APPLICATION.',
       detail:
         'AirSense is an air quality IoT sensors e-shop and data visualization service and my first collaborate work with Agile (SCRUM) methodology. It is structured with REST API architecture. The back-end is set up with Spring Boot, JPA and Hibernate while the front-end with React-js, Bootstrap and CSS. The application implements chat using Websockets, Paypal transactions and SMTP Mail service. Last but not least, a python script generates dummy data and store them to MySQL and Grafana analyse and visualize them on the application.',
-      link: 'http://173.249.63.213:88'
+      link: 'http://www.airsense.tk/'
     },
     walker: {
       title: 'Silver Spoon Application',
