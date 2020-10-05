@@ -610,6 +610,9 @@ section:nth-of-type(2) .bar:nth-child(12) .fill {
 section:nth-of-type(2) .bar:nth-child(13) .fill {
   transition: 2.3s 0.2s width ease-in-out;
 }
+section:nth-of-type(2) .bar:nth-child(14) .fill {
+  transition: 2.4s 0.2s width ease-in-out;
+}
 section:nth-of-type(2) .bar span {
   display: none;
 }
@@ -763,6 +766,9 @@ section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
 }
 section:nth-of-type(3) #gallery .mix:nth-child(13) .card {
   background: url("../img/thumb-13.jpg") center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(14) .card {
+  background: url("../img/thumb-14.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix .card {
   height: 240px;
