@@ -98,6 +98,13 @@ $(document).ready(function() {
       detail:
         'Backend Node.js API for the Bootcamp application to manage bootcamps, courses, reviews, users and authentication.',
       link: 'https://bootcamp-api.netlify.app/',
+    },
+    golang: {
+      title: 'Web Development with Go',
+      tag: 'GOLANG PHOTO GALLERY WEB APPLICATION.',
+      detail:
+        'A golang web application where users can sign up for an account, create galleries,and then upload images to include in each gallery. Then once a gallery has been created, they can send a link to their clients/friends to share the gallery.',
+      link: 'https://github.com/petrostrak/DarkRoom',
     }
   };
 
