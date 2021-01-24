@@ -105,6 +105,13 @@ $(document).ready(function() {
       detail:
         'A golang web application where users can sign up for an account, create galleries,and then upload images to include in each gallery. Then once a gallery has been created, they can send a link to their clients/friends to share the gallery.',
       link: 'https://github.com/petrostrak/DarkRoom',
+    },
+    news: {
+      title: 'Read the News',
+      tag: 'NEWS WEB APPLICATION.',
+      detail:
+        'It’s a simple web application written in Go that fetches news articles matching a particular search query through the News API, and presents the results on the page.',
+      link: 'https://petrostrak-news.herokuapp.com/',
     }
   };
 

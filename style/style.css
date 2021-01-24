@@ -616,6 +616,9 @@ section:nth-of-type(2) .bar:nth-child(14) .fill {
 section:nth-of-type(2) .bar:nth-child(15) .fill {
   transition: 2.5s 0.2s width ease-in-out;
 }
+section:nth-of-type(2) .bar:nth-child(16) .fill {
+  transition: 2.6s 0.2s width ease-in-out;
+}
 section:nth-of-type(2) .bar span {
   display: none;
 }
@@ -775,6 +778,9 @@ section:nth-of-type(3) #gallery .mix:nth-child(14) .card {
 }
 section:nth-of-type(3) #gallery .mix:nth-child(15) .card {
   background: url("../img/thumb-15.jpg") center center/cover;
+}
+section:nth-of-type(3) #gallery .mix:nth-child(16) .card {
+  background: url("../img/thumb-16.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix .card {
   height: 240px;
@@ -1254,6 +1260,10 @@ footer .footnote .highlight {
   }
   .animated.waypoint#gallery .mix:nth-child(15) > div {
     animation: slideUp 0.75s 1.5s ease both;
+    opacity: 0;
+  }
+  .animated.waypoint#gallery .mix:nth-child(16) > div {
+    animation: slideUp 0.75s 1.6s ease both;
     opacity: 0;
   }
   .animated.slide-up {
