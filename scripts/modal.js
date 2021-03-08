@@ -112,6 +112,13 @@ $(document).ready(function() {
       detail:
         'It’s a simple web application written in Go that fetches news articles matching a particular search query through the News API, and presents the results on the page.',
       link: 'https://petrostrak-news.herokuapp.com/',
+    },
+    multi: {
+      title: 'Multithreading in Golang',
+      tag: 'PARALLELISM & CONCURRENCY.',
+      detail:
+        'Multi-threading examples, including a boids simulation in Go Lang. This source code has examples of creating threads and inter process communication (IPC) via memory sharing and message passing (such as channels). It also has examples of thread synchronization, such as mutexes, wait groups and conditional variables.',
+      link: 'https://github.com/petrostrak/concurrency-in-golang',
     }
   };
 
@@ -201,21 +208,29 @@ $(document).ready(function() {
     $('#modal .title').text(modalText[id].title);
     $('#modal .detail').text(modalText[id].detail);
     $('#modal .tag').text(modalText[id].tag);
-    if (modalText[id].link)
+    if (modalText[id].link) {
       $('#modal .button')
         .addClass('visible')
         .parent()
         .attr('href', modalText[id].link);
-
+    }
     $.each($('#modal li'), function(index, value) {
       $(this).text(modalText[id].bullets[index]);
     });
     $.each($('#modal .slide'), function(index, value) {
-      $(this).css({
-        background:
-          "url('img/slides/" + id + '-' + index + ".jpg') center center/cover",
-        backgroundSize: 'cover'
-      });
+      if (id === 'multi') {
+        $(this).css({
+          background:
+            "url('img/slides/" + id + '-' + index + ".gif') center center/cover",
+          backgroundSize: 'cover'
+        });
+      } else {
+        $(this).css({
+          background:
+            "url('img/slides/" + id + '-' + index + ".jpg') center center/cover",
+          backgroundSize: 'cover'
+        });
+      }
     });
   }
 });
