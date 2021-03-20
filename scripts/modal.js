@@ -119,6 +119,13 @@ $(document).ready(function() {
       detail:
         'Multi-threading examples, including a boids simulation in Go Lang. This source code has examples of creating threads and inter process communication (IPC) via memory sharing and message passing (such as channels). It also has examples of thread synchronization, such as mutexes, wait groups and conditional variables.',
       link: 'https://github.com/petrostrak/concurrency-in-golang',
+    },
+    booking: {
+      title: 'Booking with Golang',
+      tag: 'BOOKING WEB APPLICATION.',
+      detail:
+        'Bookings and reservation web app. Visitors to our site will be able to search for accommodations by date and make an online reservation, and the site owner will be able to manage reservations from a secure back end.',
+      link: 'https://github.com/petrostrak/booking-with-go',
     }
   };
 
