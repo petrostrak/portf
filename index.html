@@ -1,653 +1,394 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
-
-  <!-- HOSTED -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
-    rel="stylesheet" type="text/css" />
-  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
-
-  <!-- LOCAL -->
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel='shortcut icon' href='favicon.jpg' type='image/x-icon' />
-
-  <!-- HOSTED -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-
-  <!-- LOCAL -->
-  <script src="scripts/pt.min.js"></script>
-  <script src="scripts/index.js"></script>
-  <script src="scripts/modal.js"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/p5.min.js"></script>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/addons/p5.sound.min.js"></script>
-  <script type="text/javascript" src="scripts/sketch.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Petros Trakadas - Personal Website</title>
+       
 </head>
-
 <body>
-  <div class="overflow-wrap">
-    <!-- HOME -->
-    <div class="modal-wrap flex">
-      <div class="mask"></div>
-      <div class="modal" id="modal">
-        <div class="carousel-wrap">
-          <div class="window">
-            <div id="carousel">
-              <div class="slide"></div>
-              <div class="slide"></div>
-              <div class="slide"></div>
-            </div>
-            <i class="mdi mdi-chevron-left" id="prev"></i>
-            <i class="mdi mdi-chevron-right" id="next"></i>
-          </div>
-        </div>
-        <div class="info-box">
-          <div class="title"></div>
-          <div class="tag"></div>
-          <div class="detail"></div>
-          <a href="#" target="_blank">
-            <div class="button">
-              <i class="mdi mdi-open-in-new"></i>VIEW SITE / SOURCE CODE
-            </div>
-          </a>
-        </div>
-        <i class="close mdi mdi-close"></i>
-      </div>
-    </div>
-
-    <section id="home" class="flex height-fix">
-      <div id="pt" class="canvas"></div>
-      <div class="flex">
-        <div class="text">
-          Hello, I'm <span class="highlight">Petros Trakadas</span>.
-          <br />
-          I'm a junior back-end developer.
+    <div id="home">
+        <div class="content">
+            <h1 class="title">Petros Trakadas</h1>
+            <h1 class="subtitle">Personal Website</h1>
         </div>
 
-        <div class="button page-link" dest="about">
-          View my work <i class="mdi mdi-arrow-right"></i>
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>My name is Petros Trakadas and I'm a junior web developer. I'm from Greece, living in Athens and currently working at European Dynamics.
+                You can find me on
+                <a class="no-underline icon" href="https://github.com/petrostrak" target="_blank">
+                    <i class="fab fa-github"/></i>
+                </a> or on
+                <a class="no-underline icon" href="https://www.linkedin.com/in/petrostrak" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>.
+                </p>
+
+            <p>
+                I am a hardworking and ambitious individual with a great passion for technology and especially programming. Currently I am changing my career to become a Software Developer. I enjoy being challenged and engaged with projects that require me to work outside my comfort and knowledge set, as continuing to learn new technologies is crucial to me.
+                My technical skills have been developed during the 500 hours of intensive training in Software Development, organized by PeopleCert and HEPIS. Developed under the academic supervision of the Athens University of Economics and Business. 
+            </p>
+
+            <div id="cols" class="row">
+                <div class="column">
+                    <h2><i class="fas fa-heartbeat"></i> Life so far...</h2>
+                    <ul class="about-list">
+                        <li>Breathing since 1986</li>
+                        <li>Started studying Mech. Engineering in 2004</li>
+                        <li>Got Bachelors in 2009</li>
+                        <li>Started working as developer in 2020</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2><i class="fas fa-fire"/></i> Passionate about...</h2>
+                    <ul class="about-list">
+                        <li>Food</li>
+                        <li>Books</li>
+                        <li>Video Games</li>
+                        <li>Coding</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2><i class="fas fa-lightbulb"/></i> Thinking about...</h2>
+                    <ul class="about-list">
+                        <li>Go Programming Language</li>
+                        <li>Kubernetes</li>
+                        <li>Shell Scripting</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <nav class="flex">
-          <div class="link-wrap">
-            <div class="active page-link" dest="home">home</div>
-            <div class="page-link" dest="about">about</div>
-            <div class="page-link" dest="portfolio">portfolio</div>
-            <div class="page-link" dest="blog">blog</div>
-            <div class="page-link" dest="contact">contact</div>
-          </div>
-          <i class="mdi mdi-menu"></i>
-        </nav>
-      </div>
-    </section>
+        <div>
+            <h1>Projects</h1>
+            <p>These are some of my projects, you can find all of them on my
+                <a class="no-underline icon" href="https://github.com/petrostrak" target="_blank">
+                <i class="fab fa-github"/></i>
+                </a>
+            </p>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container flex">
-        <div class="header waypoint" data-animation="slide-in-left">
-          ABOUT
-        </div>
-        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+            <div class="projects">
 
-        <div class="skills-wrapper flex row-gt-sm">
-          <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left" style="text-align: justify;">
-            <div class="label bold">Who am I?</div>
-            I am a hardworking and ambitious individual with a great passion for technology and especially
-            programming. Currently I am changing my career to become a Software Developer. I enjoy being challenged
-            and engaged with projects that require me to work outside my comfort and knowledge set, as continuing to
-            learn new technologies is crucial to me.
-            <!-- <img src="img/me.jpg" class="me" /> -->
-            <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
-            <div class="label bold"></div>
-            <div style="text-align: justify;">
-              My technical skills have been developed during the 500 hours of intensive training in Software
-              Development, organized by PeopleCert and HEPIS. Developed under the academic supervision of the
-              Athens University of Economics and Business.
-              <span class="page-link highlight" dest="contact">For more info about me...</span>
-            </div>
-          </div>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="http://www.airsense.tk/" target="_blank">
+                        <img src="assets/images/air.gif" alt="air"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>AirSense</h2>
+                        <p>AirSense is an air quality IoT sensors e-shop and data visualization service and my first collaborate work with Agile (SCRUM) methodology. It is structured with REST API architecture. The back-end is set up with Spring Boot, JPA and Hibernate while the front-end with React-js, Bootstrap and CSS. The application implements chat using Websockets, Paypal transactions and SMTP Mail service. Last but not least, a python script generates dummy data and store them to MySQL and Grafana analyse and visualize them on the application.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #Java, #Springboot, #React, #MySQL, #Grafana
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
+                
+                <div class="project-item">
+                        <figure class="left">
+                            <a class="no-underline" href="https://github.com/petrostrak/Chatapp" target="_blank">
+                            <img src="assets/images/chatSp.jpg" alt="chat"  height="150" width="250" style="margin-top: 25px">
+                            </a>
+                        </figure>
+                        <section class="right">
+                            <h2>Chat Application</h2>
+                            <p>This is Spring Boot WebSocket Chat Application with SockJS fallback and STOMP protocol. This is a sample project to demonstrate building and deploying a simple Spring Boot based microservice and a web app to consume the microservice.</p>
+                            <div class="project-tag">
+                                <i class="fas fa-tag"/></i>
+                                <BaseTag class="no-underline">
+                                    #Java, #Springboot, #WebSockets, #MySQL
+                                </BaseTag>
+                            </div>
+                        </section>
+                </div>
+                
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/DarkRoom" target="_blank">
+                        <img src="assets/images/photo.jpg" alt="photo"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Photo Gallery with Go</h2>
+                        <p>A golang web application where users can sign up for an account, create galleries,and then upload images to include in each gallery. Then once a gallery has been created, they can send a link to their clients/friends to share the gallery.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #Go, #PostgreSQL
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
+             
 
-          <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
-            <div class="bar flex">
-              <div class="bar fill" style="width:80%">
-                <div class="tag bold flex">Java</div>
-              </div>
-            </div>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://petrostrak-news.herokuapp.com/" target="_blank">
+                        <img src="assets/images/news.png" alt="news"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Read the News</h2>
+                        <p>It’s a simple web application written in Go that fetches news articles matching a particular search query through the News API, and presents the results on the page.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #Go
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
+             
 
-            <div class="bar flex">
-              <div class="bar fill" style="width:85%">
-                <div class="tag bold flex">Go</div>
-              </div>
-            </div>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/concurrency-in-golang" target="_blank">
+                        <img src="assets/images/multi.gif" alt="news"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Read the News</h2>
+                        <p>Multi-threading examples, including a boids simulation in Go Lang. This source code has examples of creating threads and inter process communication (IPC) via memory sharing and message passing (such as channels). It also has examples of thread synchronization, such as mutexes, wait groups and conditional variables.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #Go
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
+             
 
-            <div class="bar flex">
-              <div class="bar fill" style="width:80%">
-                <div class="tag bold flex">ProtocolBuffers</div>
-              </div>
-            </div>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/booking-with-go" target="_blank">
+                        <img src="assets/images/booking.png" alt="news"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Booking with Golang</h2>
+                        <p>Bookings and reservation web app. Visitors to our site will be able to search for accommodations by date and make an online reservation, and the site owner will be able to manage reservations from a secure back end.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #Go, #PostgreSQL
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
             
-            <div class="bar flex">
-              <div class="bar fill" style="width:80%">
-                <div class="tag bold flex">gRPC</div>
-              </div>
-            </div>
 
-            <div class="bar flex">
-              <div class="bar fill" style="width:75%">
-                <div class="tag bold flex">Spring Boot</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:70%">
-                <div class="tag bold flex">JSF</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:70%">
-                <div class="tag bold flex">JavaScript</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:70%">
-                <div class="tag bold flex">Node.js</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width: 60%">
-                <div class="tag bold flex">GraphQL</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width: 65%">
-                <div class="tag bold flex">React</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width: 50%">
-                <div class="tag bold flex">Angular</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:80%">
-                <div class="tag bold flex">SQL / NoSQL</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:50%">
-                <div class="tag bold flex">Docker</div>
-              </div>
-            </div>
-
-            <div class="bar flex">
-              <div class="bar fill" style="width:75%">
-                <div class="tag bold flex">Linux</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTFOLIO -->
-    <section class="flex" id="portfolio">
-      <div class="header waypoint" data-animation="slide-in-right">
-        PROJECTS
-      </div>
-      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
-
-      <div class="filter-wrap waypoint" data-animation="fade-in">
-        <div class="flex row">
-          <div class="filter" data-filter="all">ALL</div>
-          <div class="filter" data-filter=".java">JAVA</div>
-          <div class="filter" data-filter=".go">GO</div>
-          <div class="filter" data-filter=".php">PHP</div>
-          <div class="filter" data-filter=".react">REACT</div>
-          <div class="filter" data-filter=".node">NODE JS</div>
-        </div>
-        <div class="float-bar">
-          <div class="flex row">
-            <div class="filter" data-filter="all">ALL</div>
-            <div class="filter" data-filter=".java">JAVA</div>
-            <div class="filter" data-filter=".go">GO</div>
-            <div class="filter" data-filter=".php">PHP</div>
-            <div class="filter" data-filter=".react">REACT</div>
-            <div class="filter" data-filter=".node">NODE JS</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="gallery" class="container flex row wrap waypoint">
-        <div class="mix react" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">An introduction to React</div>
-              <span class="highlight">REACT.JS / HTML / SCSS</span>
-            </div>
-            <div class="button" id="ordering">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix react" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">React project</div>
-              <span class="highlight">ROUTER / REDUX / HOOKS</span>
-            </div>
-            <div class="button" id="discover">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix java" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Spring Boot Application</div>
-              <span class="highlight">JWT / JPA / MySQL</span>
-            </div>
-            <div class="button" id="newrelic">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix java" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">AirSense</div>
-              <span class="highlight">SPRINGBOOT / REACT / MySQL / GRAFANA</span>
-            </div>
-            <div class="button" id="roambi">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix react" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Silver Spoon Application</div>
-              <span class="highlight">ANGULAR.JS</span>
-            </div>
-            <div class="button" id="walker">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix node" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Weather Application</div>
-              <span class="highlight">NODE.JS / HTML / CSS</span>
-            </div>
-            <div class="button" id="mystand">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix node" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Task Manager Application</div>
-              <span class="highlight">NODE.JS</span>
-            </div>
-            <div class="button" id="never">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix node" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Chat Application</div>
-              <span class="highlight">NODE.JS / HTML / CSS</span>
-            </div>
-            <div class="button" id="powur">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix php" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Spotify Clone</div>
-              <span class="highlight">PHP / HTML / CSS / JS</span>
-            </div>
-            <div class="button" id="spotify">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix java" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Spring Chat Application</div>
-              <span class="highlight">SPRINGBOOT / HTML / CSS / JS</span>
-            </div>
-            <div class="button" id="springChat">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix node react" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">DevConnect</div>
-              <span class="highlight">NODE.JS / REACT.JS</span>
-            </div>
-            <div class="button" id="devConnect">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix java" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Spring Boot Crud</div>
-              <span class="highlight">SPRINGBOOT / ANGULAR.JS</span>
-            </div>
-            <div class="button" id="springAngular">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix node" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">NestJS Task Management</div>
-              <span class="highlight">NEST.JS / NODE.JS</span>
-            </div>
-            <div class="button" id="nestjs">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix node" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">NodeJS Bootcamp API</div>
-              <span class="highlight">NODE.JS</span>
-            </div>
-            <div class="button" id="bootcamp">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix go" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Photo Gallery with GO</div>
-              <span class="highlight">GOLANG</span>
-            </div>
-            <div class="button" id="golang">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix go" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Read the News</div>
-              <span class="highlight">GOLANG</span>
-            </div>
-            <div class="button" id="news">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix go" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Multithreading Programming</div>
-              <span class="highlight">GOLANG</span>
-            </div>
-            <div class="button" id="multi">LEARN MORE</div>
-          </div>
-        </div>
-
-        <div class="mix go" data-my-order="1">
-          <div>
-            <div class="card"></div>
-            <div class="text">
-              <div class="bold">Booking With Go!</div>
-              <span class="highlight">GOLANG</span>
-            </div>
-            <div class="button" id="booking">LEARN MORE</div>
-          </div>
-        </div>        
-
-      </div>
-    </section>
-
-    BLOG
-    <section id="blog">
-      <div class="container flex">
-        <div class="header waypoint" data-animation="slide-in-left">BLOG</div>
-        <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
-
-        <div class="flex row wrap">
-          <div class="flex row-gt-sm">
-            <a href="https://www.infoworld.com/article/3569150/jdk-16-begins-to-take-shape.html?fbclid=IwAR2Bk52AWImy6PAbu5poMQ4eyZhfnZdjJ0HMzl1POxt9KISCAbFRwqrbRnk" target="_blank" rel="noopener noreferrer">
-              <div class="blog-wrap waypoint" data-animation="fade-in">
-                <div class="fade-wrap">
-                  <div class="thumb" id="thumb-1"></div>
-                  <div class="label bold">JDK 16 begins to take shape</div>
-                  <div class="date">SEPT 2, 2020</div>
-                  <div class="bar"></div>
-                  <div class="text">
-                    Although not due to arrive until March 2021, Java
-                    Development Kit 16 is beginning to take shape,
-                    starting with enabling C++ 14 language features in
-                    JDK C++ source code and a vector API.
-                  </div>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://petros-weather-app.herokuapp.com/" target="_blank">
+                        <img src="assets/images/weather.png" alt="weather"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Weather Application</h2>
+                        <p>A node.js web-application where the user can search the weather forecast. It makes http calls to Open Weather Map API and renders the result on the screen. The back-end is written in Node.js and the front-end is rendered by a simplistic HTML / CSS.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #NodeJS, #HTML, #CSS
+                            </BaseTag>
+                        </div>
+                    </section>
                 </div>
-              </div>
-            </a>
-            <a href="https://hub.packtpub.com/microservices-require-a-high-level-vision-to-shape-the-direction-of-the-system-in-the-long-term-says-jaime-buelta/?fbclid=IwAR1Lh0LZF7bIMayvwioTJZZtxBUlLp1nze7qrgAwUr_Oe7LVHZu_BwUp1dY"
-              target="_blank" rel="noopener noreferrer">
-              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".2s">
-                <div class="fade-wrap">
-                  <div class="thumb" id="thumb-2"></div>
-                  <div class="label bold">
-                    Microservices require a high-level vision
-                  </div>
-                  <div class="date">NOV 25, 2019</div>
-                  <div class="bar"></div>
-                  <div class="text">
-                    A traditional monolith application encloses all its
-                    capabilities in a single unit. On the contrary, in
-                    the microservices architecture, the application is
-                    divided into smaller...
-                  </div>
+            
+
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/DevConnect" target="_blank">
+                        <img src="assets/images/dev.jpg" alt="dev"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>DevConnect</h2>
+                        <p>This is a full stack social network application with React, Redux, Node, Express & MongoDB. It uses Stateless JWT authentication practices, Redux for state management and is created with an extensive backend API with Express.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #NodeJS, #React, #Redux, #MongoDB
+                            </BaseTag>
+                        </div>
+                    </section>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="flex row-gt-sm">
-            <a href="https://medium.com/@kent.rancourt/go-pointers-when-to-use-pointers-4f29256ddff3" target="_blank" rel="noopener noreferrer">
-              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".4s">
-                <div class="fade-wrap">
-                  <div class="thumb" id="thumb-3"></div>
-                  <div class="label bold">Go Pointers:<br> When to use them</div>
-                  <div class="date">JAN 28, 2020</div>
-                  <div class="bar"></div>
-                  <div class="text">
-                    Before we begin talking about when to use pointers and when not to, 
-                    we should briefly acknowledge some of the inherent dangers of working 
-                    with pointers. i.e. We need to establish...
-                  </div>
+                     
+
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/NestJs-Task-Management-Application" target="_blank">
+                        <img src="assets/images/nest.jpg" alt="nest"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>NestJS Task Management</h2>
+                        <p>This is a task management web application written with NestJS, a Node.js back-end development framework built upon Express, leveraging the power of TypeScript . It implements REST APIs performing CRUD operations, Authentication and Authorization with JWT, uses TypeORM for PostgreSQL interaction and is deployed to Amazon Web Services (s3, elastic beanstalk).</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #NestJS, #TypeScript, #PostgreSQL, #s3, #Elastic-Beanstalk
+                            </BaseTag>
+                        </div>
+                    </section>
                 </div>
-              </div>
-            </a>
-            <a href="https://medium.com/edureka/java-oop-cheat-sheet-9c6ebb5e1175"
-              target="_blank" rel="noopener noreferrer">
-              <div class="blog-wrap waypoint" data-animation="fade-in" data-delay=".6s">
-                <div class="fade-wrap">
-                  <div class="thumb" id="thumb-4"></div>
-                  <div class="label bold">
-                    Java Object-Oriented Programming Cheat Sheet
-                  </div>
-                  <div class="date">AUG 14, 2019</div>
-                  <div class="bar"></div>
-                  <div class="text">
-                    Object-Oriented Programming or better known
-                    as OOPs is one of the major pillars of Java
-                    that has leveraged its power and ease of usage...
-                  </div>
+             
+
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/Task-Manager-App" target="_blank">
+                        <img src="assets/images/task.png" alt="task"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Task Manager Application</h2>
+                        <p>A node.js Task Manager Rest API. It implements user authentication with email/ password, supports email notification and database datastorage file-upload in MongoDB.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #NodeJS, #MongoDB
+                            </BaseTag>
+                        </div>
+                    </section>
                 </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+             
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
-        xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
-        <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-      </svg>
-      <div class="container flex">
-        <div class="header waypoint" data-animation="slide-in-left">
-          CONTACT
-        </div>
-        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
-          <a class="button page-link"
-            href="https://drive.google.com/uc?export=download&id=17QMJnB289TpOUEDmV22hw56ngz_cc64k">Download my CV
-          </a>
-        <div id="cv"></div>
-        <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
-          I look forward to a working relationship in the future
-        </div>
-      </div>
-    </section>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://petros-chat-app.herokuapp.com/" target="_blank">
+                        <img src="assets/images/chatjs.jpg" alt="task"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Chat Application</h2>
+                        <p>A node.js chat-application. It gives the user the freedom to choose an individual private room to join and chat with others. The back-end is written in Node.js taking advantage of the socket.io library and the front-end is rendered by a simplistic HTML / CSS.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #NodeJS, #Socket-io
+                            </BaseTag>
+                        </div>
+                    </section>
+                    </div>
+                </div> 
 
-    <footer>
-      <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://bootcamp-api.netlify.app/" target="_blank">
+                        <img src="assets/images/bootcamp.jpg" alt="task"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>NodeJS Bootcamp API</h2>
+                        <p>Backend Node.js API for the Bootcamp application to manage bootcamps, courses, reviews, users and authentication.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #NodeJS
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
 
-      <div class="icon-wrap flex row">
-        <a href="https://www.linkedin.com/in/petrostrak/" target="_blank" rel="noopener noreferrer">
-          <div class="flex icon" id="icon-2">
-            <i class="mdi mdi-linkedin"></i>
-          </div>
-        </a>
-        <a href="https://github.com/petrostrak" target="_blank" rel="noopener noreferrer">
-          <div class="flex icon" id="icon-3">
-            <i class="mdi mdi-github-box"></i>
-          </div>
-        </a>
-        <a href="mailto:pit.trak@gmail.com">
-          <div class="flex icon" id="icon-4">
-            <i class="mdi mdi-gmail"></i>
-          </div>
-        </a>
-      </div>
-      <div class="info-box">
-        <div class="footnote">
-          PETROS TRAKADAS <span class="highlight">&copy;2020</span>
+                <div class="project-item">
+                    <figure class="left">
+                        <a class="no-underline" href="https://github.com/petrostrak/Spotify" target="_blank">
+                        <img src="assets/images/php.jpg" alt="php"  height="150" width="250" style="margin-top: 25px">
+                        </a>
+                    </figure>
+                    <section class="right">
+                        <h2>Spotify clone app</h2>
+                        <p>A Spotify-like web application for music streaming, using registretion, search for all artists / albums / songs, create and customize own playlists and control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. This web application is built with HTML, CSS, PHP, JQuery, JavaScript and MySQL.</p>
+                        <div class="project-tag">
+                            <i class="fas fa-tag"/></i>
+                            <BaseTag class="no-underline">
+                                #PHP, #JavaScript, #MySQL
+                            </BaseTag>
+                        </div>
+                    </section>
+                </div>
+            </div> 
         </div>
-      </div>
-    </footer>
-  </div>
 
-  <div id="preload">
-    <img src="img/me.png" />
-    <img src="img/filler.jpg" />
-    <img src="img/thumb-1.jpg" />
-    <img src="img/thumb-2.jpg" />
-    <img src="img/thumb-3.jpg" />
-    <img src="img/thumb-4.jpg" />
-    <img src="img/thumb-5.jpg" />
-    <img src="img/thumb-6.jpg" />
-    <img src="img/thumb-7.jpg" />
-    <img src="img/thumb-8.jpg" />
-    <img src="img/thumb-9.jpg" />
-    <img src="img/thumb-11.jpg" />
-    <img src="img/thumb-12.jpg" />
-    <img src="img/thumb-13.jpg" />
-    <img src="img/thumb-14.jpg" />
-    <img src="img/thumb-15.jpg" />
-    <img src="img/blog-1.jpg" />
-    <img src="img/blog-2.jpg" />
-    <img src="img/blog-3.jpg" />
-    <img src="img/blog-4.png" />
-    <img src="img/slides/bootcamp-0.jpg" />
-    <img src="img/slides/bootcamp-1.jpg" />
-    <img src="img/slides/bootcamp-2.jpg" />
-    <img src="img/slides/devConnect-0.jpg" />
-    <img src="img/slides/devConnect-1.jpg" />
-    <img src="img/slides/devConnect-2.jpg" />
-    <img src="img/slides/discover-0.jpg" />
-    <img src="img/slides/discover-1.jpg" />
-    <img src="img/slides/discover-2.jpg" />
-    <img src="img/slides/go-2.jpg" />
-    <img src="img/slides/go-2.jpg" />
-    <img src="img/slides/go-0.jpg" />
-    <img src="img/slides/ordering-0.jpg" />
-    <img src="img/slides/ordering-1.jpg" />
-    <img src="img/slides/ordering-2.jpg" />
-    <img src="img/slides/newrelic-0.jpg" />
-    <img src="img/slides/newrelic-1.jpg" />
-    <img src="img/slides/newrelic-2.jpg" />
-    <img src="img/slides/mystand-0.jpg" />
-    <img src="img/slides/mystand-1.jpg" />
-    <img src="img/slides/mystand-2.jpg" />
-    <img src="img/slides/never-0.jpg" />
-    <img src="img/slides/never-1.jpg" />
-    <img src="img/slides/never-2.jpg" />
-    <img src="img/slides/powur-0.jpg" />
-    <img src="img/slides/powur-1.jpg" />
-    <img src="img/slides/powur-2.jpg" />
-    <img src="img/slides/roambi-0.jpg" />
-    <img src="img/slides/roambi-1.jpg" />
-    <img src="img/slides/roambi-2.jpg" />
-    <img src="img/slides/themall-0.jpg" />
-    <img src="img/slides/themall-1.jpg" />
-    <img src="img/slides/themall-2.jpg" />
-    <img src="img/slides/walker-0.jpg" />
-    <img src="img/slides/walker-1.jpg" />
-    <img src="img/slides/walker-2.jpg" />
-    <img src="img/slides/springChat-0.jpg" />
-    <img src="img/slides/springChat-1.jpg" />
-    <img src="img/slides/springChat-2.jpg" />
-    <img src="img/slides/springAngular-0.jpg" />
-    <img src="img/slides/springAngular-1.jpg" />
-    <img src="img/slides/springAngular-2.jpg" />
-    <img src="img/slides/spotify-0.jpg" />
-    <img src="img/slides/spotify-1.jpg" />
-    <img src="img/slides/spotify-2.jpg" />
-    <img src="img/slides/nestjs-0.jpg" />
-    <img src="img/slides/nestjs-1.jpg" />
-    <img src="img/slides/nestjs-2.jpg" />
-    <img src="img/slides/news-0.jpg" />
-    <img src="img/slides/news-1.jpg" />
-    <img src="img/slides/news-2.jpg" />
-    <img src="img/slides/multi-0.gif" />
-    <img src="img/slides/multi-1.gif" />
-    <img src="img/slides/multi-2.gif" />
-    <img src="img/slides/booking-0.jpg" />
-    <img src="img/slides/booking-1.jpg" />
-    <img src="img/slides/booking-2.jpg" />
-  </div>
+        <div>
+            <h1>Blog Posts</h1>
+            <p>
+                This is a list of some interesting posts/articles I read.
+            </p>
+            <span>
+
+                <ul class="post-list">
+                    <li class="post-item">
+                        <div class="meta">NOV 25, 2019 <a class="no-underline" href="https://hub.packtpub.com/microservices-require-a-high-level-vision-to-shape-the-direction-of-the-system-in-the-long-term-says-jaime-buelta/?fbclid=IwAR1Lh0LZF7bIMayvwioTJZZtxBUlLp1nze7qrgAwUr_Oe7LVHZu_BwUp1dY"
+                             target="_blank">Microservices require a high-level vision.</a></div>
+                    </li>
+                </ul>
+
+                <ul class="post-list">
+                    <li class="post-item">
+                        <div class="meta">AUG 14, 2019 <a class="no-underline" href="https://medium.com/edureka/java-oop-cheat-sheet-9c6ebb5e1175"
+                             target="_blank">Java Object-Oriented Programming Cheat Sheet.</a></div>
+                    </li>
+                </ul>                
+
+                <ul class="post-list">
+                    <li class="post-item">
+                        <div class="meta">SEPT 2, 2020 <a class="no-underline" href="https://www.infoworld.com/article/3569150/jdk-16-begins-to-take-shape.html?fbclid=IwAR2Bk52AWImy6PAbu5poMQ4eyZhfnZdjJ0HMzl1POxt9KISCAbFRwqrbRnk" 
+                             target="_blank">JDK 16 begins to take shape.</a></div>
+                    </li>
+                </ul>
+
+                <ul class="post-list">
+                    <li class="post-item">
+                        <div class="meta">JAN 28, 2020 <a class="no-underline" href="https://medium.com/@kent.rancourt/go-pointers-when-to-use-pointers-4f29256ddff3"
+                             target="_blank">Go Pointers: When to use them.</a></div>
+                    </li>
+                </ul>
+
+            </span>
+        </div>
+
+        <section>
+            <h1>Learning and Reading</h1>
+            <p>These are the books I've read so far.</p>
+            <div class="books">
+                <img src="assets/images/go.jpg" alt="Girl in a jacket" width="130" height="195" style="margin-right: 15px;">
+                <img src="assets/images/mastering.jpg" alt="Girl in a jacket" width="130" height="195" style="margin-right: 15px;">  
+                <img src="assets/images/goweb.jpg" alt="Girl in a jacket" width="130" height="195" style="margin-right: 15px;">                 
+                <img src="assets/images/java.jpg" alt="Girl in a jacket" width="130" height="195" style="margin-right: 15px;">
+                <img src="assets/images/javads.jpg" alt="Girl in a jacket" width="130" height="195" style="margin-right: 15px;">  
+                <img src="assets/images/design.jpg" alt="Girl in a jacket" width="130" height="195" style="margin-right: 15px;">
+            </div>
+        </section>
+
+        <div class="content">
+            <h1>Contact</h1>
+            <p>You can reach out to me through
+                <a class="no-underline icon" href="https://www.linkedin.com/in/petrostrak" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>as well as on my mail address at <code class="inline">pit.trak@gmail.com</code>
+            </p>
+            <BaseFooter :items="[
+                    {value: 'Home', url: '/'},
+                    {value: 'Contact', url: '/contact'},
+                    {value: 'Subscribe', url: '/subscribe'}]">
+            </BaseFooter>
+        </div>
+    </div>
 </body>
-
+        <footer id="footer">
+            <div class="footer-left">
+                <a class="footer-left icon" href="#home">Copyright &copy; 2020 Petros Trakadas</a>
+            </div>
+        </footer>
 </html>
-
-<script src="scripts/canvas.js"></script>
